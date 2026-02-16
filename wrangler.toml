@@ -1,0 +1,14 @@
+name = "telegram-vip-bot"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+ADMIN_SECRET = "change_this"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "vipdb"
+database_id = "YOUR_D1_DATABASE_ID"
+
+[triggers]
+crons = ["0 * * * *"]
